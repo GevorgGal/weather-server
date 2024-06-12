@@ -49,7 +49,7 @@ func WeatherHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	resp := models.WeatherResponse{
-		Condition: condition,
+		Condition:   condition,
 		Temperature: temperature,
 	}
 

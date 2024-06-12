@@ -1,0 +1,11 @@
+.env
+
+/bin/
+/pkg/
+/vendor/
+
+.vscode/
+
+weather-server
+
+*.log
