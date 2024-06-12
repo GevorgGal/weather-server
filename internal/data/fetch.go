@@ -19,7 +19,7 @@ func FetchWeatherData(lat, lon float64) (*models.WeatherData, error) {
 	}
 	defer res.Body.Close()
 
-  var data models.WeatherData
+	var data models.WeatherData
 	if err := json.NewDecoder(res.Body).Decode(&data); err != nil {
 		return nil, fmt.Errorf("unable to parse weather data: %v", err)
 	}
